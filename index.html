@@ -516,10 +516,41 @@
             <use href="./images/hero/symbol-defs.svg#icon-close-tag"></use>
           </svg>
         </button>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus, eos?
-        </p>
+        
+        <form class="form">
+          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form-field">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="name" name="name" id="name" class="form-input"/>
+          </div>
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-input"/>
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-label">Пошта</label>
+            <input type="email" name="email" id="email" class="form-input"/>
+          </div>
+          <div class="form-field">
+            <label for="feedback" class="form-label">Коментар</label>
+            <textarea
+              name="feedback"
+              id="feedback"
+              placeholder="Введіть текст"
+              class="form-textarea"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" name="policy" id="policy" class="checkbox-input" />
+            <label for="policy" class="checkbox-label"
+              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+          </div>
+
+          <button type="submit" class="backdrop-button">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
